@@ -1,0 +1,292 @@
+/*Notes
+Bookmarks stored in supply chain window
+
+*/
+HTML  CSS   Result
+Edit on 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+		height: 100%;
+	}
+body {
+	
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-color: #d5eef6;
+		background-attachment: fixed;
+		font-family: raleway, arial, sans-serif;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0px;
+}
+body.home{
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "hero	hero hero"             
+                         "top-bar top-bar top-bar"
+                         ".	value-proposition ."
+						 ". call-to-action1 ."
+						 ".	more-info ."
+						 ".	call-to-action2 ."
+                         ". main-footer	.";
+}
+body.about{
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "hero	hero hero"             
+                         "top-bar top-bar top-bar"
+                         ".	title ."
+						 ". picture	."
+						 ".	blurb	."
+                         ". main-footer	.";
+}
+
+body.services{
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "hero	hero hero"             
+                         "top-bar top-bar top-bar"
+                         ".	title ."
+						 ". writing	."
+                         ". main-footer	.";
+}
+
+body.contact{
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "hero	hero hero"             
+                         "top-bar top-bar top-bar"
+                         ".	title ."
+						 ". phone	."
+						 ". form	."
+						 ". email	."
+						 ". address	."
+                         ". main-footer	.";
+}
+
+body.terms{
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "top-bar top-bar top-bar"
+						 ". termspage	."
+                         ". main-footer	.";
+}
+
+.top-bar{
+	background-color: #29416a;
+	grid-area: top-bar;
+	display: grid;
+	grid-template-columns: 30% auto auto 30%;
+	grid-template-areas: ".	logo  menu  .";
+}
+
+.hero{
+	grid-area: hero;
+	justify-self: center;
+	max-width: 100%;
+	
+}
+
+.logo{
+	grid-area: logo;
+	justify-self: start;	
+}
+
+.menu{
+	grid-area: menu;
+	justify-self: end;
+}
+
+.title{
+	grid-area: title;
+	justify-self: center;
+}
+
+.picture{
+	grid-area: picture;
+	justify-self: center;
+}
+
+.blurb{
+	grid-area: blurb;
+}
+/* Home page ONLY */
+.value-proposition{
+	grid-area: value-proposition;
+	justify-self: center;
+}
+
+.call-to-action1{
+	grid-area: call-to-action1;
+	justify-self: center;
+}
+
+.call-to-action2{
+	grid-area: call-to-action2;
+	justify-self: center;
+}
+
+.more-info{
+	grid-area: more-info;
+	justify-self: center;
+}
+
+/* Services Page ONLY */
+.writing{
+	grid-area: writing;
+	justify-self: center;
+}
+
+/* Contact page ONLY*/
+.phone{
+	grid-area: phone;
+	justify-self: center;
+}
+.form{
+	grid-area: form;
+	justify-self: center;
+}
+.email{
+	grid-area: email;
+	justify-self: center;
+}
+.address{
+	grid-area: address;
+	justify-self: center;
+}
+
+/* Terms pag ONLY*/
+.termspage{
+	grid-area: termspage;
+	justify-self: center;
+}
+
+/* FOOTER */
+.main-footer{
+	grid-area: main-footer;
+	text-align: center;
+	align-self: end;
+}
+
+/*Essential Dropdown*/
+.dropbtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border: none;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: transparent;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+	background-color: #dec58b
+}
+
+.dropdown-content a:hover {background-color: #ac8b62}
+
+.dropdown:hover .dropdown-content {
+    display: grid;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: transparent;
+}
+
+.container {
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+}
+
+/*Non=essential Dropdown*/
+.dropdown{
+	display: block;
+	grid-area: menu;
+	align-self: start;
+	align-content: center;
+	justify-self: end;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #ac8b62}
+.dropdown:hover .dropbtn {
+    background-color: transparent;
+}
+
+
+/* styling css */
+h1 {
+	color: #000000;
+}
+h2 {
+	color: #000000;
+	font-size: 12pt;
+}
+h3{
+	color: #000000;
+}
+li {
+	color: #000000;
+}
+p {
+	color: #000000;
+}
+a {
+	color: #000000;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #dec58b;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #ac8b62;
+}
+
+#responsive-image {
+	width: 100%;
+	height: auto;
+}
+
+input[type=text] {
+    padding: 10px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+#hero {
+	max-width: 100%;
+}
