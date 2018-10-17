@@ -94,7 +94,7 @@ body.terms{
 
 .hero{
 	grid-area: hero;
-	justify-self: center;
+	/*justify-self: center;*/
 	max-width: 100%;
 	
 }
@@ -288,5 +288,11 @@ input[type=text] {
 }
 
 #hero {
-	max-width: 100%;
+	width: 100%;
+}
+
+p.brand{
+	font-family: "orbitron", sans-serif;
+	color: #ffffff;
+	font-size: 25px;
 }
